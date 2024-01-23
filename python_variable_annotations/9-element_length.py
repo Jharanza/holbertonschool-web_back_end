@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
-from typing import Tuple, List, Sequence, Iterable
 """ Module that receives an iterable and returns a list """
+from typing import Tuple, List, Sequence, Iterable
 
 
 def element_length(lst: Iterable[Sequence]) -> List[Tuple[Sequence, int]]:

@@ -3,4 +3,5 @@
 
 
 def to_str(n: float) -> str:
+    ''' Method that takes a float and returns a string '''
     return str(n)

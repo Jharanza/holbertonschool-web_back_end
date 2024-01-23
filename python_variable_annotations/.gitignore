@@ -1,2 +1,4 @@
+__pycache__/
+.history/
 0-main.py
-__pycache__/0-add.cpython-310.pyc
+1-main.py

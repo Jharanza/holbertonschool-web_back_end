@@ -4,5 +4,5 @@
 
 def floor(n: float) -> int:
     ''' method that take a float number and round it '''
-    n = n.__floor__()
+    n = int(n)
     return n

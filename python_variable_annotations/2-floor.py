@@ -1,4 +1,4 @@
-#!/usr/bin/venv python3
+#!/usr/bin/env python3
 """ Module that take a float value and returns an int """
 
 

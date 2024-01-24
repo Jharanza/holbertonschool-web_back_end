@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
 """ Module that import a generator and use it in an async comprehension """
 import asyncio
-from typing import Generator
+from typing import List
 
 async_generator = __import__('0-async_generator').async_generator
 
 
-async def async_comprehension() -> Generator[float, None, None]:
+async def async_comprehension() -> List[float]:
     ''' Method that create a async comprehension '''
     list_number = [rand_number async for rand_number in async_generator()]
     return list_number

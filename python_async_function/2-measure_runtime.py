@@ -1,4 +1,4 @@
-#!/usr/bin/evn python3
+#!/usr/bin/env python3
 """ Module that measure the runtime of wait_n """
 from time import time
 import asyncio

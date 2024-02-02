@@ -12,7 +12,7 @@ def index_range(page: int, page_size: int) -> Tuple[int]:
     total_index: int = page * page_size
 
     initial: int = total_index - page_size
-    final: int  = total_index
+    final: int = total_index
     res: Tuple = (initial, final)
 
     return res

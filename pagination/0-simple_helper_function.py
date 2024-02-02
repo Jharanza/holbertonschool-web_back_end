@@ -9,10 +9,14 @@ def index_range(page: int, page_size: int) -> Tuple[int]:
         page: page number
         page_size: number of indexes
     """
-    total_index: int = page * page_size
+    assert isinstance(page, int)
+    assert isinstance(page_size, int)
 
-    initial: int = total_index - page_size
-    final: int = total_index
-    res: Tuple = (initial, final)
+    assert page > 0
+    assert page_size > 0
+    
+    start_index: int = (page - 1) * page_size
 
-    return res
+    end_index: int = start_index + page_size
+
+    return start_index, end_index

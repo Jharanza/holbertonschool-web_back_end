@@ -13,11 +13,11 @@ def log_dump():
 
     total_logs = collection.count_documents({})  # count the total logs
 
-    print(f"{total_logs} logs ")  # print the total number of logs
+    print(f"{total_logs} logs")  # print the total number of logs
 
     http_methods = ['GET', 'POST', 'PUT', 'PATCH', 'DELETE']  # define a list
 
-    print('Methods: ')  # header
+    print('Methods:')  # header
 
     # iterar over each http method
     for method in http_methods:

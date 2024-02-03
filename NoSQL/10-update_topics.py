@@ -4,8 +4,5 @@
 
 def update_topics(mongo_collection, name, topics):
     """ Method that change the topics of a document """
-    result = mongo_collection.update_one({'name': name}, {
-        '$set': {'topics': topics}
-    })
 
-    return result
+    return mongo_collection.update_many({'name': name}, {'$set': {'topics': topics}})

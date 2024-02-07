@@ -1,5 +1,7 @@
 /**
- * 
+ * Implement a class with an abstract method
+ * @sqft attribute of type number
+ * @evacuationWarningMessage abstract method
  */
 
 export default class Building {

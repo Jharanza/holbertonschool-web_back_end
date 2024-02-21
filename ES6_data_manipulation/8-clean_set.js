@@ -1,18 +1,13 @@
 export default function cleanSet(set, startString) {
-  const array = Array.from(set);
-  const len = startString.length;
+  if (startString === undefined || typeof startString !== 'string') return '';
+  const array = [...set];
 
-  const newArray = [];
-  for (const element of array) {
-    if (element.startsWith(startString)) newArray.push(element.slice(len));
-  }
+  // Use filter to keep only elements starting with startString
+  const filteredSet = array.filter((value) => value.startsWith(startString));
 
-  let result = '';
-  const arrayLen = array.length;
-  for (const element of newArray) {
-    result += element;
-    if (element !== newArray[arrayLen - 2]) result += '-';
-  }
+  // Extract the remaining part after startString from each value
+  const filteredValues = filteredSet.map((value) => value.slice(startString.length));
 
-  return result;
+  // Join the filtered values with "-" as separator
+  return filteredValues.join('-');
 }
